@@ -1,0 +1,87 @@
+header {
+    background-color: rgb(52, 133, 255);
+    border: 5px chartreuse;
+    width: 750px;
+    height: 250px;
+    border-top: 10px black solid;
+    border-bottom: 5px black solid;
+    border-left: 10px black solid;
+    border-right: 10px black solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner {
+    background-color: aliceblue;
+    border: 5px chocolate;
+    width: 500px;
+    height: 230px;
+    margin: 10px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 15;
+}
+
+.logo {
+    background-color: aliceblue;
+    border: 5px chocolate;
+    width: 210px;
+    height: 230px;
+    margin: 10px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 15;
+}
+
+nav {
+    background-color: rgb(40, 206, 40);
+    width: 750px;
+    height: 50px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-left: 10px black solid;
+    border-right: 10px black solid;
+}
+
+main {
+    background-color: rgb(94, 94, 94);
+    width: 750px;
+    height: 400px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-left: 10px black solid;
+    border-right: 10px black solid;
+    display: flex;
+}
+
+article {
+    background-color: aliceblue;
+    border: 5px chocolate;
+    width: 450px;
+    height: 380px;
+    margin: 10px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 25;
+}
+
+aside {
+    background-color: aliceblue;
+    border: 5px chocolate;
+    width: 270px;
+    height: 380px;
+    margin: 10px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 25;
+}
+
+footer {
+    background-color: rgb(235, 180, 0);
+    width: 750px;
+    height: 50px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-left: 10px black solid;
+    border-right: 10px black solid;
+}

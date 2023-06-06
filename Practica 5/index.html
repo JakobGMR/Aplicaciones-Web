@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="p1">Hola mundo</p>
+    <h1 id="titulo">Encabezado Viejo</h1>
+    <p class="intro">este es un ejemplo</p>
+    <p class="intro">este es otro ejemplo</p>
+    <ul>
+        <li>Agua</li>
+        <li>Salsa</li>
+        <li>Limonada</li>
+        <li>Coca</li>
+        <li>Hielo</li>
+    </ul>
+    
+    <script>
+        document.getElementById("p1").innerHTML="¡Nuevo Texto!";
+        const elemento = document.getElementById("titulo");
+        elemento.innerHTML="Nuevo Encabezado";
+        const element = document.getElementsByName("p");
+        const x = document.querySelectorAll("p.intro");
+        console.log(x);
+        const listItems = document.querySelectorAll("ul > li");
+        console.log(listItems);
+        const h1Element = document.querySelector("h1");
+        console.log(h1Element);
+        const list = document.querySelector(".list");
+        console.log(list);
+
+        const listaDeElementos = document.querySelectorAll("ul > li");
+
+        listaDeElementos.forEach((item) => {
+            console.log(item);
+        });
+
+        const h1 = document.querySelector("h1");
+        h1.style.color = "blue";
+    </script>
+</body>
+</html>

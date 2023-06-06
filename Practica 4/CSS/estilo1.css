@@ -1,0 +1,67 @@
+main {
+    background-color: #ddd;
+    display: flex;
+    justify-content: end;
+    min-height: 900px;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    max-width: 1200px;
+    min-width: 200px;
+}
+
+div {
+    align-items: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 800px;
+    margin: 5px;
+}
+
+label {
+    text-align: right;
+    width: 260px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+input {
+    height: 20px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+select {
+    height: 40px;
+    width: 375px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.dia {
+    min-width: 10px;
+    max-width: 114px;
+}
+
+.mes {
+    min-width: 10px;
+    max-width: 114px;
+}
+
+.año {
+    min-width: 10px;
+    max-width: 114px;
+}
