@@ -19,7 +19,35 @@
         <li>Coca</li>
         <li>Hielo</li>
     </ul>
-    
+
+    <form action="" id="form1">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+    <form action="" id="frm2"></form>
+    <form action="" id="frm3"></form>
+    <form action="" id="frm4"></form>
+
+    <ul>
+        <li></li>
+    </ul>
+
+    <form action="" name="miFormulario">
+        <input id="btn" type="button" placeholder="Da click" style="height: 35px; width: 65px;" value="Da click">
+        <input type="text" id="numero">
+        <input type="text" name="nombre" id="">
+        <input type="button" value="Comprobar" onclick="validarFormulario()">
+        <input type="button" value="Segundo boton" onclick="miFunction()">
+        <input type="submit" name="" id="">
+        <p id="demo2"></p>
+    </form>
+
+    <img src="https://www.salirconarte.com/wp-content/uploads/2017/06/orig_64571-750x430.jpg" alt="" id="miImagen" style="height: 150px;">
+
+
     <script>
         document.getElementById("p1").innerHTML="¡Nuevo Texto!";
         const elemento = document.getElementById("titulo");
@@ -28,6 +56,7 @@
         const x = document.querySelectorAll("p.intro");
         console.log(x);
         const listItems = document.querySelectorAll("ul > li");
+
         console.log(listItems);
         const h1Element = document.querySelector("h1");
         console.log(h1Element);
@@ -42,6 +71,53 @@
 
         const h1 = document.querySelector("h1");
         h1.style.color = "blue";
+
+        const xx = document.forms["form1"];
+        let texto = "";
+        for (let i = 0; i < xx.length; i++) {
+            texto += xx.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = texto;
+        console.log(xx);
+
+        let lista = document.createElement("ul");
+        document.body.appendChild(lista);
+
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "Flor";
+        lista.appendChild(elemento1);
+
+        let elemento2 = document.createElement("li");
+        elemento2.textContent = "Jaguar";
+        lista.appendChild(elemento2);
+
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () =>{
+            alert("Gracias por dar Click");
+        })
+
+        function validarFormulario() {
+            let x = document.forms["miFormulario"]["nombre"].value;
+            if(x === "") {
+                alert("Se debe completar el nombre");
+                return false;
+            }
+        }
+        function miFunction() {
+            let x = document.getElementById("numero").value;
+            let texto;
+            if(isNaN(x) || x<1 || x>10) {
+                texto = "Entrada no válida";
+            } else {
+                texto = "Entrada correcta";
+            }
+            document.getElementById("demo2").innerHTML = texto;
+        }
+
+        document.getElementById("miImagen").src = "cat.jpg";
+
+        document.getElementById("demo").innerHTML = "Fecha: " + Date();
+
     </script>
 </body>
 </html>
