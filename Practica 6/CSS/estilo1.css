@@ -1,0 +1,17 @@
+.col {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col-6 {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+div {
+    background: rgb(53, 153, 199);
+}
+
+.col-12 col-sm-6 col-md-4 col-lg-3 {
+    border: 1px solid #000;
+}
