@@ -2,3 +2,8 @@ body {
     background: url(../IMG/bg.png);
     background-color: #ffffdb;
 }
+
+.carousel-item img {
+    height: 45em;
+    overflow: hidden;
+}
