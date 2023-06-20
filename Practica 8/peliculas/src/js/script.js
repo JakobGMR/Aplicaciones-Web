@@ -43,11 +43,12 @@ let getMovie = () => {
                         <p>${data.Plot}</p>
                         <h3>Cast:</h3>
                         <p>${data.Actors}</p>
+
                     `;
                 }
                 // If movie does NOT exists in database
                 else {
-                    result.innerHTML = `<h3 class='msg'>${data.Error}</h3>`;
+                    result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
                 }
             })
 
