@@ -1,0 +1,133 @@
+body {
+    margin: 0 50px;
+    height: 100%;
+    background: radial-gradient(circle, #fff, #bbb);
+}
+
+.titulo {
+    padding: 10px;
+    text-align: center;
+    color: rgb(56, 8, 231);
+    background: #4ea;
+    margin: 15px;
+    border: 5px solid #5ba;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left {
+    margin: 5px;
+    padding: 15px;
+    border: 7px solid #555;
+    box-sizing: border-box;
+    height: fit-content;
+    position: relative;
+    top: 10em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#textarea {
+    resize: none;
+    background: #ddd;
+    border: 2px solid #000;
+}
+
+#msg {
+    color: red;
+}
+
+.boton {
+    background: #62f;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    padding: 7px;
+    margin: 5px;
+    color: #fff;
+}
+
+.boton:hover {
+    background: #51c;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 25px;
+    border: 7px solid #555;
+    box-sizing: border-box;
+    align-items: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 920px) {
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        position: static;
+    }
+}
+
+#post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+#post div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#post p {
+    word-wrap: break-word;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+i {
+    cursor: pointer;
+}
+
+/*
+<textarea id="myTextarea" maxlength="100"></textarea>
+<p><span id="charCount">0</span> caracteres ingresados. <span id="charRemaining">100</span> caracteres restantes.</p>
+
+<script>
+    const textarea = document.getElementById('myTextarea');
+    const charCount = document.getElementById('charCount');
+    const charRemaining = document.getElementById('charRemaining');
+
+    textarea.addEventListener('input', function() {
+        const count = textarea.value.length;
+        charCount.textContent = count;
+        charRemaining.textContent = 100 - count;
+    });
+</script>
+*/
