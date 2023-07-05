@@ -78,7 +78,7 @@ label {
     width: 60%;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1100px) {
     .right {
         width: 100%;
     }
@@ -114,20 +114,3 @@ label {
 i {
     cursor: pointer;
 }
-
-/*
-<textarea id="myTextarea" maxlength="100"></textarea>
-<p><span id="charCount">0</span> caracteres ingresados. <span id="charRemaining">100</span> caracteres restantes.</p>
-
-<script>
-    const textarea = document.getElementById('myTextarea');
-    const charCount = document.getElementById('charCount');
-    const charRemaining = document.getElementById('charRemaining');
-
-    textarea.addEventListener('input', function() {
-        const count = textarea.value.length;
-        charCount.textContent = count;
-        charRemaining.textContent = 100 - count;
-    });
-</script>
-*/
