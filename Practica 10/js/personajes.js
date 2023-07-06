@@ -1,6 +1,6 @@
 function getCharacters(done) {
 
-    const results  = fetch("https://rickandmortyapi.com/api/character");
+    const results  = fetch("https://apisimpsons.fly.dev/api/personajes?limit=20");
 
     results
     .then(response => response.json())
@@ -9,35 +9,21 @@ function getCharacters(done) {
     });
 }
     getCharacters(data => {
-        data.results.forEach(personaje =>{
+        data.docs.forEach(personaje =>{
 
             const article = document.createRange().createContextualFragment(
                 // html
-                `
-                <article>
+            `
+            <article>
                 <div class="img-container">
-                    <img src="${personaje.image}" alt="personaje">
+                    <img src="${personaje.Imagen}" alt="personaje">
                 </div>
     
-                <h2>${personaje.name}</h2>
-                <span>${personaje.status}</span>
+                <h2>${personaje.Nombre}</h2>
+                <span>${personaje.Estado}</span>
             </article>
             `);
             const main = document.querySelector("main");
             main.append(article);
         })
     });
-
-    document.getElementById("nav").innerHTML=`
-    <ul>
-        <li>
-            <a href="/Leccion1/Elementosbasicos.html">Elementos</a>
-        </li>
-        <li>
-            <a href="/Leccion2/Index.html">Inicio</a>
-        </li>
-        <li>
-            <a href="/Leccion2/maquetado2-2.html">Maquetado</a>
-        </li>
-        
-    </ul>`;   
