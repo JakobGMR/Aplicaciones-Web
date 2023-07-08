@@ -20,7 +20,9 @@ function getCharacters(done) {
                 </div>
     
                 <h2>${personaje.Nombre}</h2>
-                <span>${personaje.Estado}</span>
+                <span><h3>${personaje.Estado}</h3></span>
+                <h4>${personaje.Ocupacion}</h4>
+                <h5>${personaje.Genero}</h5>
             </article>
             `);
             const main = document.querySelector("main");
