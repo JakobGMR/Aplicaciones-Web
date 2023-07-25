@@ -1,0 +1,149 @@
+body, .comentarios{
+    display: grid;
+    background: rgba(83, 123, 177, 0.637);
+    place-items: center;
+}
+
+/* Boton more */
+.open{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 3px solid #222;
+    padding: 7px;
+    margin: 10px auto;
+    background: linear-gradient(#576ac288,#4852b3);
+}
+
+.button_more{
+    border: 2px solid #BDBDBD;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    color: #555;
+    cursor: pointer;
+    margin-left: 8em;
+}
+
+.button_more:hover {
+    background: #aaa;
+    color: #222;
+}
+
+.comentarios {
+    padding: 10px;
+    border: 3px solid #222;
+    box-sizing: border-box;
+}
+
+.boton-eliminar {
+    border: 2px solid #BDBDBD;
+    border-radius: 2px;
+    color: #555;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.boton-eliminar:hover {
+    background-color: #bbb;
+    color: #000;
+}
+
+/* form modal */
+#modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: transparent;
+    border-radius: 20px;
+    width: 20em;
+    background-color: #d38d8d;
+    animation: aparecer 1s forwards;
+}
+
+#form_modal {
+    text-align: center;
+}
+
+.titulo-modal {
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+}
+
+#game, #dates {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 17em;
+}
+
+textarea {
+    resize: none;/* Propiedad para que el usuario no modifique el tamaña  */
+    border-radius: 5px;
+    border: none;
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    gap: 8px;
+}
+
+#post {
+    width: 100%;
+    text-align: center;
+}
+
+.juego {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    background: linear-gradient(#55c28c, #1b5e2f);
+}
+
+.boton-editar, .boton-agregar {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    cursor: pointer;
+    background: #ff3;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.boton-editar:hover, .boton-agregar:hover {
+    background: rgb(159, 170, 0);
+}
+
+.boton-borrar, .boton-cerrar {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+    cursor: pointer;
+    background: #c22;
+    margin-bottom: 10px;
+}
+
+.boton-borrar:hover, .boton-cerrar:hover {
+    background: #a00;
+}
+
+/**/
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
