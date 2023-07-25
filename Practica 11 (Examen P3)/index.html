@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="Bg">
+    <h1>Listado de Videojuegos</h1>
+
+    <!-- Inicio de la ventana modal -->
+
+        <dialog id="modal"> <!-- La etiqueta dialog es una etiqueta para hacer ventanas modal más facil-->
+
+            <div class="form_container">
+                <!-- Forms -->
+                <form id="form_modal">
+
+                    <p class="titulo-modal"><b>Nombre del videojuego</b></p>
+                    <input type="text" id="game">
+
+                    <p>Fecha de lanzamiento</p>
+                    <input type="date" name="" id="dates">
+
+                    <p>Descripción o sinopsis</p>
+                        <textarea id="descripcion" cols="30" rows="10"></textarea>
+                    <div class="buttons">
+                        <button type="submit" class="boton-agregar">Agregar</button>
+                        <button type="reset" id="modal-close" class="boton-cerrar">Cerrar</button>
+                    </div>
+                </form>
+                <!-- Termina el forms -->
+            </div>
+            
+        </dialog>
+    <!-- Fin de la ventana modal -->
+
+    <div class="container">
+        
+        <div class="open">
+            <p>Agregar nuevo videojuego</p>
+            <button id="modal-open" class="button_more" onclick="modal_open()">
+                Agregar
+            </button> <!-- Boton para abrir modal-->
+        </div>
+
+        <div class="comentarios">
+            <h3>VideoJuegos</h3>
+
+            <form id="post">
+                <button class="boton-eliminar" type="submit" onclick="deleteAll()">Eliminar todos los comentarios</button>
+            <!-- dentro de ese div se van a crear los comentarios -->
+            </form> 
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
