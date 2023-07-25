@@ -47,7 +47,7 @@ let createPost = () => {
 
 // Eventos para editar y eliminar los comentarios
 let editpost = (e) => {
-  
+  game.value = e.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
   descripcion.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
   modal_open();/* función agregada*/ 
